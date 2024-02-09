@@ -95,7 +95,7 @@ export default function Home() {
          </div>
       <div className="flex flex-row flex-wrap">
         {movieRes? movieRes?.map((x) => (
-          <Link className="w-4/12 my-3" key={x.id} to={`Movies/${x.id}`}>
+          <Link className="w-4/12 lg:w-1/12 mx-1 my-3" key={x.id} to={`Movies/${x.id}`}>
           <Movie
             key={x.id}
             img={x.primaryImage?.url}

@@ -31,7 +31,7 @@ export default function Serach() {
         <Link key={item.imdbID} to={`Movies/${item.imdbID}`}>
         <div className="flex flex-col mb-4 border-b-2">
             <div>
-                <img className="rounded-2xl" src={item.Poster} alt="" />
+                <img className="rounded-2xl lg:w-4/12" src={item.Poster} alt="" />
             </div>
             <div className="movie-se--de">
                 <h4 className="text-[13px]">{item.Title}</h4>
@@ -55,7 +55,7 @@ export default function Serach() {
           <option value="series">Series</option>
         </select>
         </div>
-        {searchMovie && Text.length > 1? <div className="absolute w-4/12 my-6 bg-slate-800 p-4 border m-2 rounded-2xl overflow-y-scroll h-72">
+        {searchMovie && Text.length > 1? <div className="absolute w-4/12 lg:w-2/12 left-4g my-6 bg-slate-800 p-4 border m-2 rounded-2xl overflow-y-scroll h-72">
             {movieSe}
             <div className="page">
             <label htmlFor="page">Page </label>

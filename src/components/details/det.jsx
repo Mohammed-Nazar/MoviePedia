@@ -71,7 +71,7 @@ export default function Det() {
       <>
         <div className="flex flex-col mx-2">
           <div className="movie--Img">
-            <img className="w-9/12 rounded-3xl mx-auto my-4" src={movieDet.Poster} alt="null" />
+            <img className="w-9/12 rounded-3xl mx-auto my-4 lg:w-3/12" src={movieDet.Poster} alt="null" />
           </div>
           <div className="mb-3 text-center font-bold">
             <h1 className="text-2xl">{movieDet.Title}</h1>
